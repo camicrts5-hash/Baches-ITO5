@@ -1,0 +1,28 @@
+}<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reportar Bache</title>
+</head>
+<body>
+    <h2>Registrar Nuevo Bache</h2>
+    <form action="insertar_bache.php" method="POST">
+        <input type="text" name="numero" placeholder="Número (ej. 123)" required><br><br>
+        <input type="text" name="calle" placeholder="Calle" required><br><br>
+        <input type="text" name="colonia" placeholder="Colonia" required><br><br>
+        <input type="text" name="cp" placeholder="Código Postal" required><br><br>
+        
+        <label>Prioridad:</label>
+        <select name="prioridad">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select><br><br>
+ 
+        <input type="number" step="any" name="x" placeholder="Coordenada X"><br><br>
+        <input type="number" step="any" name="y" placeholder="Coordenada Y"><br><br>
+        
+        <button type="submit">Registrar Bache</button>
+    </form>
+</body>
+</html>
